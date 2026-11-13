@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Nisath ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Cinematic opening -->
+    <div id="intro">
+        <div class="intro-content">
+            <p>A SPECIAL DAY FOR SOMEONE SPECIAL</p>
+            <h1>For <span>Nisath</span> ❤️</h1>
+            <p>A little surprise, made with love.</p>
+            <button id="enterBtn">OPEN YOUR SURPRISE ✨</button>
+        </div>
+    </div>
+
+    <!-- Fireworks canvas -->
+    <canvas id="fireworks"></canvas>
+
+    <main>
+        <!-- Birthday hero -->
+        <section class="hero">
+            <div class="cake">🎂</div>
+            <p class="small-title">19 NOVEMBER</p>
+            <h1>Happy Birthday<br><span>Nisath</span></h1>
+            <p class="subtitle">
+                May your world always be filled with happiness,
+                love and beautiful memories.
+            </p>
+
+            <!-- Countdown -->
+            <h2>Countdown to your special day</h2>
+            <div class="countdown">
+                <div><strong id="days">00</strong><small>Days</small></div>
+                <div><strong id="hours">00</strong><small>Hours</small></div>
+                <div><strong id="minutes">00</strong><small>Minutes</small></div>
+                <div><strong id="seconds">00</strong><small>Seconds</small></div>
+            </div>
+            <p id="countdownMessage"></p>
+        </section>
+
+        <!-- Photo gallery -->
+        <section class="section">
+            <h2>Our Beautiful Memories 📸</h2>
+            <p class="description">Every picture holds a little story.</p>
+
+            <div class="gallery">
+                <img src="images/photo1.jpg" alt="Memory 1">
+                <img src="images/photo2.jpg" alt="Memory 2">
+                <img src="images/photo3.jpg" alt="Memory 3">
+                <img src="images/photo4.jpg" alt="Memory 4">
+            </div>
+        </section>
+
+        <!-- Music -->
+        <section class="section">
+            <h2>A Song For You 🎵</h2>
+            <p class="description">Let this melody make your day special.</p>
+            <div class="music-box">
+                <div class="music-icon">♫</div>
+                <p>Our Special Song</p>
+                <audio id="music" controls loop>
+                    <source src="music/birthday-song.mp3" type="audio/mpeg">
+                    Your browser does not support audio.
+                </audio>
+            </div>
+        </section>
+
+        <!-- Love letter -->
+        <section class="section letter-section">
+            <h2>A Letter From My Heart 💌</h2>
+            <p class="description">Some feelings deserve their own words.</p>
+
+            <button id="letterBtn">OPEN MY LETTER ❤️</button>
+
+            <div id="letter" class="letter hidden">
+                <h3>Dear Nisath,</h3>
+
+                <p>
+                    Today is not just another day.
+                    It is the day someone incredibly special
+                    came into this world.
+                </p>
+
+                <p>
+                    I wish you endless happiness, peaceful nights,
+                    beautiful mornings and dreams that come true.
+                    May you always find reasons to smile,
+                    even on your hardest days.
+                </p>
+
+                <p>
+                    I cannot promise that life will always be easy,
+                    but I hope you never stop believing in the
+                    beautiful things waiting for you.
+                </p>
+
+                <p>
+                    Thank you for being a beautiful part of my story.
+                    May this birthday become the beginning of
+                    something wonderful.
+                </p>
+
+                <h3>Happy Birthday, Nisath. ❤️</h3>
+                <p class="signature">With love, always. ♡</p>
+            </div>
+        </section>
+
+        <!-- Final surprise -->
+        <section class="final-surprise">
+            <h2>One Last Surprise ✨</h2>
+            <p>Are you ready for a little birthday magic?</p>
+            <button id="fireworkBtn">CELEBRATE 🎆</button>
+        </section>
+
+        <footer>
+            MADE WITH ❤️ JUST FOR NISATH
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

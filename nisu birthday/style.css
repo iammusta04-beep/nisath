@@ -1,0 +1,315 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #100b19;
+    color: #fff0f5;
+    font-family: Georgia, serif;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+button {
+    border: none;
+    padding: 15px 28px;
+    border-radius: 30px;
+    background: linear-gradient(120deg, #ffd1e1, #ee8db4);
+    color: #341326;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.07);
+    box-shadow: 0 0 25px #ff8dbb;
+}
+
+/* Opening screen */
+
+#intro {
+    position: fixed;
+    inset: 0;
+    z-index: 10;
+    background: radial-gradient(circle, #602c50, #120c1c);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    transition: opacity 1s, visibility 1s;
+}
+
+#intro.hide {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.intro-content p {
+    letter-spacing: 3px;
+    color: #ffd1e1;
+    font-size: 12px;
+    margin: 20px;
+}
+
+.intro-content h1 {
+    font-size: clamp(45px, 10vw, 75px);
+    font-weight: normal;
+}
+
+.intro-content h1 span {
+    color: #ffb6d0;
+    font-style: italic;
+}
+
+/* Main birthday section */
+
+main {
+    max-width: 1000px;
+    margin: auto;
+    padding: 25px 18px;
+}
+
+.hero {
+    min-height: 650px;
+    padding: 70px 20px;
+    border: 1px solid #ffb6d033;
+    border-radius: 30px;
+    background: linear-gradient(145deg, #44203e, #1b1227);
+    box-shadow: 0 15px 60px #0008;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cake {
+    font-size: 65px;
+    margin-bottom: 20px;
+}
+
+.small-title {
+    color: #ffc1d8;
+    letter-spacing: 5px;
+}
+
+.hero h1 {
+    font-size: clamp(48px, 10vw, 85px);
+    font-weight: normal;
+    margin: 20px 0;
+}
+
+.hero h1 span {
+    color: #ffb7d2;
+    font-style: italic;
+}
+
+.subtitle {
+    max-width: 500px;
+    line-height: 1.8;
+    color: #e9cbd9;
+    font-size: 16px;
+    margin-bottom: 35px;
+}
+
+.hero h2 {
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+/* Countdown */
+
+.countdown {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.countdown div {
+    background: #ffffff12;
+    border: 1px solid #ffc1d844;
+    border-radius: 15px;
+    min-width: 75px;
+    padding: 15px 10px;
+}
+
+.countdown strong {
+    display: block;
+    font-size: 30px;
+    color: #ffc1d8;
+}
+
+.countdown small {
+    font: 11px Arial, sans-serif;
+    color: #eac7d8;
+}
+
+/* Sections */
+
+.section {
+    margin-top: 35px;
+    padding: 45px 25px;
+    border: 1px solid #ffc1d822;
+    border-radius: 25px;
+    background: #ffffff09;
+}
+
+.section h2,
+.final-surprise h2 {
+    font-size: 32px;
+    font-weight: normal;
+    color: #ffc1d8;
+}
+
+.description {
+    margin: 15px 0 30px;
+    color: #d9bdcb;
+    font: 14px Arial, sans-serif;
+    line-height: 1.7;
+}
+
+/* Photo gallery */
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 1px solid #ffc1d844;
+    transition: 0.4s;
+}
+
+.gallery img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 20px #ffb6d855;
+}
+
+/* Music */
+
+.music-box {
+    padding: 25px;
+    background: #ffffff0d;
+    border-radius: 20px;
+}
+
+.music-icon {
+    font-size: 50px;
+    color: #ffb6d0;
+}
+
+.music-box p {
+    margin: 15px;
+}
+
+audio {
+    width: 100%;
+    max-width: 450px;
+}
+
+/* Letter */
+
+.letter {
+    max-width: 650px;
+    margin: 30px auto 0;
+    padding: 30px;
+    text-align: left;
+    background: #ffffff0c;
+    border: 1px solid #ffc1d833;
+    border-radius: 20px;
+    line-height: 1.9;
+}
+
+.letter h3 {
+    color: #ffb6d0;
+    margin-bottom: 15px;
+}
+
+.letter p {
+    margin-bottom: 18px;
+}
+
+.hidden {
+    display: none;
+}
+
+.signature {
+    text-align: right;
+    font-style: italic;
+}
+
+/* Final surprise */
+
+.final-surprise {
+    margin-top: 40px;
+    padding: 60px 20px;
+    border-radius: 25px;
+    background: linear-gradient(135deg, #532543, #25132d);
+}
+
+.final-surprise p {
+    margin-top: 20px;
+    color: #e8c6d7;
+}
+
+/* Fireworks */
+
+#fireworks {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 8;
+}
+
+/* Footer */
+
+footer {
+    padding: 40px 10px;
+    color: #c99bb4;
+    font: 11px Arial, sans-serif;
+    letter-spacing: 3px;
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+    .hero {
+        min-height: 580px;
+    }
+
+    .gallery img {
+        height: 210px;
+    }
+
+    .section {
+        padding: 35px 15px;
+    }
+
+    .section h2 {
+        font-size: 26px;
+    }
+
+    .countdown {
+        gap: 7px;
+    }
+
+    .countdown div {
+        min-width: 68px;
+    }
+
+    .letter {
+        padding: 20px;
+    }
+}
